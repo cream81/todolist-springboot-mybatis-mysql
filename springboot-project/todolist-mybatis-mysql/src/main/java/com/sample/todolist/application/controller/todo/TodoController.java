@@ -43,8 +43,6 @@ public class TodoController {
 		mav.addObject("todo", todoList);
 		mav.setViewName(HTML1);
 		
-		System.out.println(todoList.get(0).getCreatedDate());
-
 		return mav;
 	}
 

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.sample.todolist.domain.mapper.todo.TodoMapper">
+	<select id="selectTodo" resultType="com.sample.todolist.domain.model.entity.Todo">
+		SELECT
+		id as id
+		, description as description
+		, status as status
+		, created_date as createdDate
+		, created_by as createdBy
+		, last_modified_date as lastModifiedDate
+		, last_modified_by as lastModifiedBy
+		, is_deleted as isDeleted
+		FROM todo
+		WHERE
+		is_deleted = '0'
+	</select>
+
+	<select id="selectDetailTodo" resultType="com.sample.todolist.domain.model.entity.Todo">
+		SELECT
+		id as id
+		, description as description
+		, status as status
+		, created_date as createdDate
+		, created_by as createdBy
+		, last_modified_date as lastModifiedDate
+		, last_modified_by as lastModifiedBy
+		, is_deleted as isDeleted
+		FROM todo
+		WHERE
+		is_deleted = '0'
+		AND id = #{id}
+	</select>
+
+	<insert id="insetTodo">
+		insert into todo
+		(description, status, created_by, last_modified_by)
+		 values
+		 (#{description}, #{status}, #{username}, #{username})
+	</insert>
+
+	<update id="updateTodo">
+		UPDATE
+		todo
+		SET description = #{description}
+		, status = #{status}
+		, created_by = #{createdBy}
+		, last_modified_by = #{lastModifiedBy}
+		WHERE
+		is_deleted = '0'
+		AND id = #{id}
+	</update>
+
+	<update id="deleteLogicalTodo">
+		UPDATE
+		todo
+		SET is_deleted = '1'
+		WHERE
+		is_deleted = '0'
+		AND id = #{id}
+	</update>
+</mapper>

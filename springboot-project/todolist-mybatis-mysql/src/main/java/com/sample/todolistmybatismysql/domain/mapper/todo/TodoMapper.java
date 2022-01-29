@@ -1,11 +1,11 @@
-package com.sample.todolist.domain.mapper.todo;
+package com.sample.todolistmybatismysql.domain.mapper.todo;
 
 import java.util.List;
 
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
 
-import com.sample.todolist.domain.model.entity.Todo;
+import com.sample.todolistmybatismysql.domain.model.entity.Todo;
 
 @Mapper
 public interface TodoMapper {

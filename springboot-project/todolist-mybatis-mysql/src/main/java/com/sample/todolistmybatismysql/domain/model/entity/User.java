@@ -1,4 +1,4 @@
-package com.sample.todolist.domain.model.entity;
+package com.sample.todolistmybatismysql.domain.model.entity;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;

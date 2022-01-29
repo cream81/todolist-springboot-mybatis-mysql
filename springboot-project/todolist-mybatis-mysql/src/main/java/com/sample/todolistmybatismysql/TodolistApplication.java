@@ -1,4 +1,4 @@
-package com.sample.todolist;
+package com.sample.todolistmybatismysql;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

@@ -1,11 +1,11 @@
-package com.sample.todolist.domain.service.login;
+package com.sample.todolistmybatismysql.domain.service.login;
 
 import java.util.Collection;
 
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 
-import com.sample.todolist.domain.model.entity.User;
+import com.sample.todolistmybatismysql.domain.model.entity.User;
 
 public class ReservationLoginDetails implements UserDetails {
     private final User user;

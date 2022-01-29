@@ -1,4 +1,4 @@
-package com.sample.todolist.application.config;
+package com.sample.todolistmybatismysql.application.config;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
@@ -11,7 +11,7 @@ import org.springframework.security.config.annotation.web.configuration.WebSecur
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 
-import com.sample.todolist.domain.service.login.ReservationLoginDetailsService;
+import com.sample.todolistmybatismysql.domain.service.login.ReservationLoginDetailsService;
 
 @Configuration // コンフィグレーションファイル
 @EnableGlobalMethodSecurity(prePostEnabled = true) // メソッドセキュリティを有効

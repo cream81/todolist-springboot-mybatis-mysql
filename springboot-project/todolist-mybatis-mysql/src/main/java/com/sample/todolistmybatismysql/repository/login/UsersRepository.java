@@ -1,9 +1,9 @@
-package com.sample.todolistmybatismysql.domain.repository.login;
+package com.sample.todolistmybatismysql.repository.login;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
-import com.sample.todolistmybatismysql.domain.model.entity.User;
+import com.sample.todolistmybatismysql.model.dto.User;
 
 @Repository
 public interface UsersRepository extends JpaRepository<User, Long> {

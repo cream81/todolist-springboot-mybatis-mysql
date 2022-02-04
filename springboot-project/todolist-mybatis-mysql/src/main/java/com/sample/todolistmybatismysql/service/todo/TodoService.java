@@ -1,12 +1,12 @@
-package com.sample.todolistmybatismysql.domain.service.todo;
+package com.sample.todolistmybatismysql.service.todo;
 
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.sample.todolistmybatismysql.domain.mapper.todo.TodoMapper;
-import com.sample.todolistmybatismysql.domain.model.entity.Todo;
+import com.sample.todolistmybatismysql.model.dto.Todo;
+import com.sample.todolistmybatismysql.repository.todo.TodoMapper;
 
 @Service
 public class TodoService {

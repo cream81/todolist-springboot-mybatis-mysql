@@ -1,4 +1,4 @@
-package com.sample.todolistmybatismysql.application.controller.todo;
+package com.sample.todolistmybatismysql.web;
 
 import java.util.List;
 
@@ -14,9 +14,9 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 
-import com.sample.todolistmybatismysql.domain.model.entity.Todo;
-import com.sample.todolistmybatismysql.domain.service.login.ReservationLoginDetails;
-import com.sample.todolistmybatismysql.domain.service.todo.TodoService;
+import com.sample.todolistmybatismysql.model.dto.Todo;
+import com.sample.todolistmybatismysql.service.login.ReservationLoginDetails;
+import com.sample.todolistmybatismysql.service.todo.TodoService;
 
 @Controller
 @RequestMapping("/todos")

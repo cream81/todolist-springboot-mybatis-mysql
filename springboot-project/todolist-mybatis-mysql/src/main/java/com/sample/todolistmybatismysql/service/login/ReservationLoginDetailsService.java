@@ -1,4 +1,4 @@
-package com.sample.todolistmybatismysql.domain.service.login;
+package com.sample.todolistmybatismysql.service.login;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.UserDetails;
@@ -6,8 +6,8 @@ import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
 
-import com.sample.todolistmybatismysql.domain.model.entity.User;
-import com.sample.todolistmybatismysql.domain.repository.login.UsersRepository;
+import com.sample.todolistmybatismysql.model.dto.User;
+import com.sample.todolistmybatismysql.repository.login.UsersRepository;
 
 @Service
 public class ReservationLoginDetailsService implements UserDetailsService {
